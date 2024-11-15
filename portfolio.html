@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - THE ART CONVERGENCE</title>
+    <style>
+        /* Same styles as before */
+        :root {
+            --primary-color: #f25a22;
+            --background-color: #2b2b2b;
+            --text-color: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        nav {
+            width: 100%;
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        .portfolio {
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background-color: var(--primary-color);
+            padding: 20px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            color: var(--background-color);
+            transition: transform 0.2s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Our Portfolio</h1>
+    </header>
+
+    <section class="portfolio">
+        <div class="portfolio-item">Project 1</div>
+        <div class="portfolio-item">Project 2</div>
+        <div class="portfolio-item">Project 3</div>
+        <div class="portfolio-item">Project 4</div>
+    </section>
+
+</body>
+</html>
