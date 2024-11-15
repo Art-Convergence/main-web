@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE ART CONVERGENCE</title>
+    <style>
+        /* Root Variables */
+        :root {
+            --primary-color: #f25a22; /* Orange color from logo */
+            --background-color: #2b2b2b; /* Dark background */
+            --text-color: #ffffff;
+        }
+        
+        /* Reset and Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        /* Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+        
+        /* About Section */
+        .about {
+            max-width: 600px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        /* Portfolio Section */
+        .portfolio {
+            max-width: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .portfolio-item {
+            background-color: var(--primary-color);
+            padding: 20px;
+            border-radius: 8px;
+            width: 200px;
+            text-align: center;
+            color: var(--background-color);
+            transition: transform 0.2s;
+        }
+        
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Contact Section */
+        .contact {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .contact a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>THE ART CONVERGENCE</h1>
+        <p>We Build Everything</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Welcome to THE ART CONVERGENCE. We are a startup focused on delivering unique and impactful creations across various domains. Our expertise covers a range of services to help bring your ideas to life.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="portfolio-item">Project 1</div>
+        <div class="portfolio-item">Project 2</div>
+        <div class="portfolio-item">Project 3</div>
+        <div class="portfolio-item">Project 4</div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to <a href="mailto:contact@theartconvergence.com">get in touch</a> with us!</p>
+    </section>
+
+    <script>
+        // Simple JavaScript for potential interactions
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                alert(More details about ${item.textContent});
+            });
+        });
+    </script>
+
+</body>
+</html>
