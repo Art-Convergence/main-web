@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +29,26 @@
             min-height: 100vh;
             padding: 20px;
         }
+
+        /* Navbar Styling */
+        nav {
+            width: 100%;
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            text-align: center;
+        }
         
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         /* Header Section */
         header {
             text-align: center;
@@ -45,14 +65,14 @@
             font-size: 1.1rem;
             color: var(--text-color);
         }
-        
+
         /* About Section */
         .about {
             max-width: 600px;
             margin: 20px 0;
             text-align: center;
         }
-        
+
         /* Portfolio Section */
         .portfolio {
             max-width: 800px;
@@ -61,7 +81,7 @@
             gap: 20px;
             justify-content: center;
         }
-        
+
         .portfolio-item {
             background-color: var(--primary-color);
             padding: 20px;
@@ -71,28 +91,36 @@
             color: var(--background-color);
             transition: transform 0.2s;
         }
-        
+
         .portfolio-item:hover {
             transform: scale(1.05);
         }
-        
+
         /* Contact Section */
         .contact {
             margin-top: 40px;
             text-align: center;
         }
-        
+
         .contact a {
             color: var(--primary-color);
             text-decoration: none;
         }
-        
+
         .contact a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
     <!-- Header Section -->
     <header>
@@ -119,15 +147,6 @@
         <h2>Contact Us</h2>
         <p>Feel free to <a href="mailto:contact@theartconvergence.com">get in touch</a> with us!</p>
     </section>
-
-    <script>
-        // Simple JavaScript for potential interactions
-        document.querySelectorAll('.portfolio-item').forEach(item => {
-            item.addEventListener('click', () => {
-                alert(More details about ${item.textContent});
-            });
-        });
-    </script>
 
 </body>
 </html>
