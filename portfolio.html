@@ -58,18 +58,18 @@
         }
 
         .portfolio {
-            max-width: 800px;
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Change to 3 for three columns */
             gap: 20px;
-            justify-content: center;
+            max-width: 1200px;
+            width: 100%;
+            justify-items: center;
         }
 
         .portfolio-item {
             background-color: var(--primary-color);
             padding: 20px;
             border-radius: 8px;
-            width: 200px;
             text-align: center;
             color: var(--background-color);
             transition: transform 0.2s;
@@ -77,6 +77,12 @@
 
         .portfolio-item:hover {
             transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
         }
     </style>
 </head>
@@ -94,10 +100,102 @@
     </header>
 
     <section class="portfolio">
-        <div class="portfolio-item">Project 1</div>
-        <div class="portfolio-item">Project 2</div>
-        <div class="portfolio-item">Project 3</div>
-        <div class="portfolio-item">Project 4</div>
+        <div class="portfolio-item">Project 1
+            <img src="./Media/IMG-20241118-WA0003.jpg" />
+        </div>
+        <div class="portfolio-item">Project 2
+            <img src="./Media/IMG-20241118-WA0004.jpg" />
+        </div>
+        <div class="portfolio-item">Project 3
+            <img src="./Media/IMG-20241118-WA0005.jpg" />
+        </div>
+        <div class="portfolio-item">Project 4
+            <img src="./Media/IMG-20241118-WA0006.jpg" />
+        </div>
+        <div class="portfolio-item">Project 1
+            <img src="./Media/IMG-20241118-WA0007.jpg" />
+        </div>
+        <div class="portfolio-item">Project 2
+            <img src="./Media/IMG-20241118-WA0008.jpg" />
+        </div>
+        <div class="portfolio-item">Project 3
+            <img src="./Media/IMG-20241118-WA0009.jpg" />
+        </div>
+        <div class="portfolio-item">Project 4
+            <img src="./Media/IMG-20241118-WA0010.jpg" />
+        </div>
+        <div class="portfolio-item">Project 3
+            <img src="./Media/IMG-20241118-WA0014.jpg" />
+        </div>
+        <div class="portfolio-item">Project 4
+            <img src="./Media/IMG-20241118-WA0022.jpg" />
+        </div>
+        <div class="portfolio-item">Project 1
+            <img src="./Media/IMG-20241118-WA0019.jpg" />
+        </div>
+        <div class="portfolio-item">Project 2
+            <img src="./Media/IMG-20241118-WA0017.jpg" />
+        </div>
+        <div class="portfolio-item">Project 3
+            <img src="./Media/IMG-20241118-WA0018.jpg" />
+        </div>
+        <div class="portfolio-item">Project 4
+            <video width="200" controls>
+                <source src="./Media/VID-20241118-WA0006.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="portfolio-item">Project 4
+            <video width="200" controls>
+                <source src="./Media/VID-20241118-WA0001.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="portfolio-item">Project 4
+            <video width="200" controls>
+                <source src="./Media/VID-20241118-WA0002.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="portfolio-item">Project 4
+            <video width="200" controls>
+                <source src="./Media/VID-20241118-WA0003.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="portfolio-item">Project 4
+            <video width="200" controls>
+                <source src="./Media/VID-20241118-WA0004.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="portfolio-item">Project 4
+            <video width="200" controls>
+                <source src="./Media/VID-20241118-WA0005.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="portfolio-item">Project 1
+            <img src="./Media/IMG-20241118-WA0011.jpg" />
+        </div>
+        <div class="portfolio-item">Project 2
+            <img src="./Media/IMG-20241118-WA0012.jpg" />
+        </div>
+        <div class="portfolio-item">Project 3
+            <img src="./Media/IMG-20241118-WA0013.jpg" />
+        </div>
+        <div class="portfolio-item">Project 4
+            <img src="./Media/IMG-20241118-WA0015.jpg" />
+        </div>
+        <div class="portfolio-item">Project 1
+            <img src="./Media/IMG-20241118-WA0016.jpg" />
+        </div>
+        <div class="portfolio-item">Project 2
+            <img src="./Media/IMG-20241118-WA0020.jpg" />
+        </div>
+        <div class="portfolio-item">Project 3
+            <img src="./Media/IMG-20241118-WA0021.jpg" />
+        </div>
     </section>
 
 </body>
