@@ -27,6 +27,31 @@
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
+        justify-content: center;
+      }
+      .image-container {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0px;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 500px;
+        display: block;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #243837;
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
       }
 
       /* Navbar Styling */
@@ -162,10 +187,15 @@
     </nav>
 
     <!-- Header Section -->
-    <header>
-      <img src="./Media/the-art-convergence-high-resolution-logo-transparent (1).png" height="500px" width="700px" alt="">
-      <h1>THE ART CONVERGENCE</h1>
-      <p>We Build Everything</p>
-    </header>
+      <div class="image-container">
+        <img
+  src="https://www.starkcloud.com/hubfs/Proveedor%20de%20Servicio%20de%20Nube.webp"
+  style="width: 100%; height: 100%; object-fit: cover; display: block;"
+  alt="Cloud Service Provider"
+/>
+
+        <div class="overlay-text">THE ART CONVERGENCE</h1>
+          <p>We Build Everything</p>
+        </div>
   </body>
 </html>
