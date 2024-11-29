@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Convergence</title>
+    <style>
+      /* Root Variables (Unchanged) */
+      :root {
+        --primary-color: #FE7833;
+        --background-color: #243837;
+        --text-color: #ffffff;
+      }
+    
+      /* General Styles (Unchanged) */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+    
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      nav {
+        width: 100%;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+    
+      nav img {
+        width: 60px;
+        height: 50px;
+      }
+    
+      .nav-links {
+        display: flex;
+        gap: 20px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--background-color);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      }
+    
+      .nav-links a {
+        text-decoration: none;
+        color: var(--background-color);
+        transition: color 0.3s, opacity 0.3s;
+      }
+    
+      .nav-links a:hover {
+        opacity: 0.7;
+        color: #5a5a5a;
+      }
+    
+      /* Three-Dot Menu */
+      .menu-icon {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+      }
+    
+      .menu-icon .dot {
+        width: 6px;
+        height: 6px;
+        background-color: var(--background-color);
+        border-radius: 50%;
+      }
+    
+      /* Sidebar */
+      .sidebar {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        background-color: var(--primary-color);
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        z-index: 1000;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+      }
+    
+      .sidebar a {
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--background-color);
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: opacity 0.3s;
+      }
+    
+      .sidebar a:hover {
+        opacity: 0.7;
+      }
+    
+      /* Responsive Media Queries */
+      @media (max-width: 599px) {
+        .nav-links {
+          display: none;
+        }
+    
+        .menu-icon {
+          display: flex;
+        }
+    
+        .sidebar {
+          display: flex;
+        }
+      }
+    
+      @media (min-width: 600px) {
+        .menu-icon {
+          display: none;
+        }
+    
+        .sidebar {
+          display: none;
+        }
+      }
+    </style>
+    
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav>
+      <img src="./Media/the-art-convergence-high-resolution-logo-black-transparent.png" alt="Logo" />
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+      <h1>THE ART CONVERGENCE</h1>
+      <p>We Build Everything</p>
+    </header>
+
+    <!-- Image Section -->
+    <div class="image-container">
+      <img
+        src="https://www.starkcloud.com/hubfs/Proveedor%20de%20Servicio%20de%20Nube.webp"
+        alt="Cloud Service Provider"
+      />
+    </div>
+  </body>
+</html>
