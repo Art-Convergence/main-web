@@ -5,11 +5,16 @@
  */
 .owl-carousel,
 .owl-carousel .owl-item {
+    height: 400px; /* Match the height of the carousel */
+    /* display: flex; */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Optional: Center items horizontally */
     -webkit-tap-highlight-color: transparent;
     position: relative
 }
 
 .owl-carousel {
+    height: 100px;
     display: none;
     width: 100%;
     z-index: 1
@@ -163,8 +168,8 @@
     position: absolute;
     height: 80px;
     width: 80px;
-    left: 50%;
-    top: 50%;
+    left: 40%;
+    top: 10%;
     margin-left: -40px;
     margin-top: -40px;
     background: url(owl.video.play.png) no-repeat;

@@ -415,12 +415,12 @@ h5,
 }
 
 .site-section {
-  padding: 2.5em 0;
+  /* padding: 2.5em 0; */
 }
 
 @media (min-width: 768px) {
   .site-section {
-    padding: 5em 0;
+    /* padding: 5em 0; */
   }
 }
 
@@ -429,7 +429,8 @@ h5,
 }
 
 .site-footer {
-  padding: 4em 0;
+  /* padding: 4em 0; */
+  margin-top: 5em;
   background-color: #243837;
 }
 
@@ -1202,7 +1203,8 @@ h5,
 }
 
 .site-section {
-  padding: 7rem 0;
+  /* padding: 7rem 0; */
+  margin-top: 0px;
 }
 
 @media (max-width: 991.98px) {
@@ -1777,8 +1779,8 @@ h5,
 }
 
 .owl-carousel-wrapper {
-  height: 100vh;
-  min-height: 600px;
+  height: 80vh;
+  min-height: 450px;
   position: relative;
 }
 
@@ -1887,7 +1889,7 @@ h5,
   }
 
   .owl-all .owl-carousel .owl-stage-outer {
-    width: 100%;
+    width: 20%;
     overflow: visible;
   }
 
@@ -2316,14 +2318,17 @@ h5,
 
 .box-92819 {
   z-index: 2;
-  background: #fff;
-  padding: 4rem;
+  /* padding: 4rem; */
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%); */
+  /* -ms-transform: translate(-50%, -50%); */
+  /* transform: translate(-80%, -90%); */
+  color:#fff;
+  text-shadow: 2px 2px 4px #000;
+
+  transform: translate(-110%, -120%);
   max-width: 500px;
 }
 
